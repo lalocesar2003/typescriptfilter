@@ -68,13 +68,13 @@ class UI {
         let textoMarca;
         switch (marca) {
             case "1":
-                textoMarca = 'americano';
+                textoMarca = 'Americano';
                 break;
             case "2":
-                textoMarca = 'asiatico';
+                textoMarca = 'Asiatico';
                 break;
             case "3":
-                textoMarca = 'europeo ';
+                textoMarca = 'Europeo ';
                 break;
             default:
                 break;
@@ -83,10 +83,10 @@ class UI {
         div.classList.add('mt-10');
         div.innerHTML = `
         <p class="header">Tu resumen<p>
-        <p class="font-bold">Marca:<span class="font-normal">$ ${textoMarca}<span><p>
-        <p class="font-bold">Año:<span class="font-normal">$ ${year}<span><p>
-        <p class="font-bold">Tipo:<span class="font-normal capitalize">$ ${tipo}<span><p>
-        <p class="font-bold">Total:<span class="font-normal">$ ${total}<span><p>
+        <p class="font-bold">Marca:<span class="font-normal"> ${textoMarca}<span><p>
+        <p class="font-bold">Año:<span class="font-normal"> ${year}<span><p>
+        <p class="font-bold">Tipo:<span class="font-normal capitalize"> ${tipo}<span><p>
+        <p class="font-bold">Total:<span class="font-normal"> $${total}<span><p>
         `;
         const resultadoDiv = document.querySelector('#resultado');
         const spinner = document.querySelector('#cargando');
